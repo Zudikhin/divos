@@ -1570,7 +1570,7 @@ body.dark_theme .header {
 .articles_content_btns {
   width: 100%;
   position: absolute;
-  bottom: 120px;
+  bottom: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2185,6 +2185,7 @@ body.dark_theme .header {
   width: 100%;
   padding: 14px;
   color: var(--secondary-color);
+  background-color: transparent;
 }
 
 .contacts_content_block_form form p span textarea::-webkit-input-placeholder {
