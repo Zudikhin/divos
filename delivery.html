@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Divos</title>
+    <meta name="author" content="Yuriy Zudikhin" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header_content">
+
+          <a class="header_content_logo" href="/">
+            <img class="light" src="img/general/logo_light.svg" alt="">
+            <img class="dark" src="img/general/logo_dark.svg" alt="">
+          </a>
+
+          <ul class="header_content_menu">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Работа на заказ</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Обо мне</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+
+          <div class="header_content_switch">
+            <p>Дневной режим</p>
+            <div id="switch_theme" class="header_content_switch_icon">
+              <img class="light" src="img/general/switch_icon_light.svg" alt="">
+              <img class="dark" src="img/general/switch_icon_dark.svg" alt="">
+            </div>
+          </div>
+
+          <div class="header_content_list">
+
+            <a class="header_content_list_account fill" href="#">
+              <img class="light" src="img/general/account_light.svg" alt="">
+              <img class="dark" src="img/general/account_dark.svg" alt="">
+            </a>
+
+            <a class="header_content_list_favorite fill" href="#">
+              <img class="light" src="img/general/favorite_light.svg" alt="">
+              <img class="dark" src="img/general/favorite_dark.svg" alt="">
+            </a>
+
+            <a class="header_content_list_cart fill" href="#">
+              <img class="light" src="img/general/cart_light.svg" alt="">
+              <img class="dark" src="img/general/cart_dark.svg" alt="">
+            </a>
+
+          </div>
+
+          <div class="header_content_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <div class="header_dropdown">
+      
+      <ul class="header_dropdown_menu">
+        <li class="active"><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Работа на заказ</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Обо мне</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+
+      <div class="header_dropdown_switcher">
+        <p class="light">Ночной режим</p>
+        <p class="dark">Дневной режим</p>
+        <div class="header_dropdown_switcher_icon">
+          <img class="light" src="img/general/switch_icon_light.svg" alt="">
+          <img class="dark" src="img/general/switch_icon_dark.svg" alt="">
+        </div>
+      </div>
+
+      <div class="header_dropdown_social">
+
+        <a href="#">
+          <img class="light" src="img/general/vk_light.svg" alt="">
+          <img class="dark" src="img/general/vk_dark.svg" alt="">
+        </a>
+
+        <a href="#">
+          <img class="light" src="img/general/fb_light.svg" alt="">
+          <img class="dark" src="img/general/fb_dark.svg" alt="">
+        </a>
+
+        <a href="#">
+          <img class="light" src="img/general/insta_light.svg" alt="">
+          <img class="dark" src="img/general/insta_dark.svg" alt="">
+        </a>
+
+        <a href="#">
+          <img class="light" src="img/general/youtube_light.svg" alt="">
+          <img class="dark" src="img/general/youtube_dark.svg" alt="">
+        </a>
+
+      </div>
+
+      <div class="header_dropdown_connection">
+        <a href="tel:+7 (999) 666-53-00">+7 (999) 666-53-00</a>
+        <a href="mailto:divos@yandex.ru">divos@yandex.ru</a>
+      </div>
+
+    </div>
+
+    <main class="main">
+
+      <div class="search">
+        <div class="container">
+          <div class="search_content">
+            <button class="search_content_back" onclick="history.back();">
+              <img class="light" src="img/search/arrow_back_light.svg" alt="">
+              <img class="dark" src="img/search/arrow_back_dark.svg" alt="" />
+            </button>
+            <form action="">
+              <input dir="rtl" type="text" placeholder="Поиск">
+              <button type="submit">
+                <img class="light" src="img/search/search_icon_light.svg" alt="">
+                <img class="dark" src="img/search/search_icon_dark.svg" alt="">
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <section class="delivery">
+        <div class="container">
+          <div class="delivery_content">
+
+            <h2>Условия оплаты и доставки</h2>
+
+            <h4>Способы оплаты</h4>
+
+            <ul>
+              <li>
+                <p>Наличными в случае самовывоза из офиса или при личной встрече.</p>
+              </li>
+
+              <li>
+                <p>На банковскую карту (Сбербанк, Альфабанк).</p>
+              </li>
+
+              <li>
+                <p>На счет PayPal (менее простой вариант, чем предыдущие; но функционирующий; так же информирую, что система больше не принимает денежные переводы по России).</p>
+              </li>
+
+              <li>
+                <p>Переводом Western Union (возможно по договоренности).</p>
+              </li>
+
+            </ul>
+
+            <h4>Доставка</h4>
+
+            <ul>
+
+              <li>
+                <p>Для доставки по Москве пользуюсь услугами курьерской службы; цена от 350р, доставка в течение нескольких часов или одного дня</p>
+              </li>
+
+              <li>
+                <p>Доставка Почтой России по Москве: займет несколько дней и 300р</p>
+              </li>
+
+              <li>
+                <p>Доставка по стране (основной вариант, по умолчанию): Почтой России, в среднем 300р и несколько дней. В счет доставки включается стоимость упаковка и затраты времени на отправку.</p>
+              </li>
+
+              <li>
+                <p>Доставка СДЭК по России: со всем моим уважением – преимуществ перед Почтой России еще не нашел, доставка дороже на 50-100%. По желанию клиента такая доставка возможна.</p>
+              </li>
+
+              <li>
+                <p>Доставка в другие страны: Почтой России. Статистика отправок приведена здесь: <a href="#">https://www</a>.</p>
+              </li>
+
+            </ul>
+
+            <h4>Особые условия:</h4>
+
+            <p class="delivery_content_text">Доставка в Санкт-Петербург возможна в течение 1-2 рабочих дней за 250-350р курьерской службой. Оформляется по договоренности.</p>
+
+            <h4>Особые условия:</h4>
+
+            <p class="delivery_content_text">С недавнего времени Почта России сократила время, затрачиваемое на доставку посылок. Рекорд: доставка из Москвы в Ярославль за 36 часов. Эти изменения послужили для укрепления авторитета Почты в моих глазах и использования почтовых услуг доставки, как приоритетных.</p>
+            <p class="delivery_content_text">Все вопросы обсуждаемы, обратится ко мне с ними Вы можете по следующим <a href="">контактам</a>.</p>
+
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_content">
+
+          <a class="footer_content_logo" href="#">
+            <img class="light" src="img/general/logo_light.svg" alt="">
+            <img class="dark" src="img/general/logo_dark.svg" alt="">
+          </a>
+
+          <div class="footer_content_social">
+            <a href="#">
+              <img class="light" src="img/general/vk_light.svg" alt="">
+              <img class="dark" src="img/general/vk_dark.svg" alt="">
+            </a>
+    
+            <a href="#">
+              <img class="light" src="img/general/fb_light.svg" alt="">
+              <img class="dark" src="img/general/fb_dark.svg" alt="">
+            </a>
+    
+            <a href="#">
+              <img class="light" src="img/general/insta_light.svg" alt="">
+              <img class="dark" src="img/general/insta_dark.svg" alt="">
+            </a>
+    
+            <a href="#">
+              <img class="light" src="img/general/youtube_light.svg" alt="">
+              <img class="dark" src="img/general/youtube_dark.svg" alt="">
+            </a>
+          </div>
+
+          <div class="footer_content_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="footer_content_connection">
+            <a href="tel:+7 (999) 666-53-00">+7 (999) 666-53-00</a>
+            <a href="mailto:divos@yandex.ru">divos@yandex.ru</a>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer_under">
+      <div class="container">
+        <div class="footer_under_content">
+          <span>2021 ©Все права защищены</span>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="back_modal"></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
