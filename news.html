@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Divos</title>
+    <meta name="author" content="Yuriy Zudikhin" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header_content">
+
+          <a class="header_content_logo" href="/">
+            <img class="light" src="img/general/logo_light.svg" alt="">
+            <img class="dark" src="img/general/logo_dark.svg" alt="">
+          </a>
+
+          <ul class="header_content_menu">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Работа на заказ</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Обо мне</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+
+          <div class="header_content_switch">
+            <p class="light">Ночной режим</p>
+            <p class="dark">Дневной режим</p>
+            <div id="switch_theme" class="header_content_switch_icon">
+              <img class="light" src="img/general/switch_icon_light.svg" alt="">
+              <img class="dark" src="img/general/switch_icon_dark.svg" alt="">
+            </div>
+          </div>
+
+          <div class="header_content_list">
+
+            <a class="header_content_list_account fill" href="#">
+              <img class="light" src="img/general/account_light.svg" alt="">
+              <img class="dark" src="img/general/account_dark.svg" alt="">
+            </a>
+
+            <a class="header_content_list_favorite fill" href="#">
+              <img class="light" src="img/general/favorite_light.svg" alt="">
+              <img class="dark" src="img/general/favorite_dark.svg" alt="">
+            </a>
+
+            <a class="header_content_list_cart fill" href="#">
+              <img class="light" src="img/general/cart_light.svg" alt="">
+              <img class="dark" src="img/general/cart_dark.svg" alt="">
+            </a>
+
+          </div>
+
+          <div class="header_content_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <div class="header_dropdown">
+      
+      <ul class="header_dropdown_menu">
+        <li class="active"><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Работа на заказ</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Обо мне</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+
+      <div class="header_dropdown_switcher">
+        <p class="light">Ночной режим</p>
+        <p class="dark">Дневной режим</p>
+        <div class="header_dropdown_switcher_icon">
+          <img class="light" src="img/general/switch_icon_light.svg" alt="">
+          <img class="dark" src="img/general/switch_icon_dark.svg" alt="">
+        </div>
+      </div>
+
+      <div class="header_dropdown_social">
+
+        <a href="#">
+          <img class="light" src="img/general/vk_light.svg" alt="">
+          <img class="dark" src="img/general/vk_dark.svg" alt="">
+        </a>
+
+        <a href="#">
+          <img class="light" src="img/general/fb_light.svg" alt="">
+          <img class="dark" src="img/general/fb_dark.svg" alt="">
+        </a>
+
+        <a href="#">
+          <img class="light" src="img/general/insta_light.svg" alt="">
+          <img class="dark" src="img/general/insta_dark.svg" alt="">
+        </a>
+
+        <a href="#">
+          <img class="light" src="img/general/youtube_light.svg" alt="">
+          <img class="dark" src="img/general/youtube_dark.svg" alt="">
+        </a>
+
+      </div>
+
+      <div class="header_dropdown_connection">
+        <a href="tel:+7 (999) 666-53-00">+7 (999) 666-53-00</a>
+        <a href="mailto:divos@yandex.ru">divos@yandex.ru</a>
+      </div>
+
+    </div>
+
+    <main class="main">
+
+      <div class="search">
+        <div class="container">
+          <div class="search_content">
+            <button class="search_content_back" onclick="history.back();">
+              <img class="light" src="img/search/arrow_back_light.svg" alt="">
+              <img class="dark" src="img/search/arrow_back_dark.svg" alt="" />
+            </button>
+            <form action="">
+              <input dir="rtl" type="text" placeholder="Поиск">
+              <button type="submit">
+                <img class="light" src="img/search/search_icon_light.svg" alt="">
+                <img class="dark" src="img/search/search_icon_dark.svg" alt="">
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <section class="news">
+        <div class="container">
+          <div class="news_content">
+
+            <div class="news_content_title">
+              <h5>Новости</h5>
+              <span>8 новостей</span>
+            </div>
+
+            <div class="news_content_list">
+
+              <div class="news_content_list_item">
+                <div class="news_content_list_item_img">
+                  <img src="img/news/1.jpg" alt="">
+                  <div class="news_content_list_item_img_tags">
+                    <a style="color: #FFFFFF; background-color: #174E56" href="#">Мир</a>
+                    <a style="color: #FFFFFF; background-color: #DE4343" href="#">Камни</a>
+                  </div>
+                  <div class="news_content_list_item_img_date">
+                    <span>15.08.21</span>
+                  </div>
+                </div>
+                <div class="news_content_list_item_text">
+                  <h3>Выставка самоцветов 25 сентября</h3>
+                  <div class="news_content_list_item_text_content">
+                    <p>25 сентября на Красной площади пройдет международная выставка “Самоцветы со всего мира”. В ней примут участие такие знаменитые ювелирные дома, как Buccellati, Cartier, Hemmerle и другие. Для посещения мероприятия необходимо перейти на официальный сайт выставки (https://vistavka.mir.com) и подать заявку на получение билета. Возможно бесплатное посещение для лиц, относящихся к следующим категориям: ...</p>
+                  </div>
+                  <a href="#">Читать полностью</a>
+                </div>
+              </div>
+
+              <div class="news_content_list_item">
+                <div class="news_content_list_item_img">
+                  <img src="img/news/2.jpg" alt="">
+                  <div class="news_content_list_item_img_tags">
+                    <a style="color: #000; background-color: #fff" href="#">Мастерская</a>
+                    <a style="color: #FFFFFF; background-color: #DE4343" href="#">Камни</a>
+                  </div>
+                  <div class="news_content_list_item_img_date">
+                    <span>05.06.21</span>
+                  </div>
+                </div>
+                <div class="news_content_list_item_text">
+                  <h3>Режим работы мастерской 12 июня</h3>
+                  <div class="news_content_list_item_text_content">
+                    <p>День России - важный праздник для любого гражданина, но мастерская продолжает работать в этот день!
+                      <br>
+                      График работы:
+                      <br> 
+                      Офис: 00:00 - 00:00
+                      <br>
+                      Мастер-огранщик: ...</p>
+                  </div>
+                  <a href="#">Читать полностью</a>
+                </div>
+              </div>
+
+              <div class="news_content_list_item">
+                <div class="news_content_list_item_img">
+                  <img src="img/news/3.jpg" alt="">
+                  <div class="news_content_list_item_img_tags">
+                    <a style="color: #000; background-color: #fff" href="#">Мастерская</a>
+                    <a style="color: #FFFFFF; background-color: #438ADE" href="#">Украшения</a>
+                  </div>
+                  <div class="news_content_list_item_img_date">
+                    <span>30.05.21</span>
+                  </div>
+                </div>
+                <div class="news_content_list_item_text">
+                  <h3>Ювелирные украшения в стиле Ар-Деко</h3>
+                  <div class="news_content_list_item_text_content">
+                    <p>Мастерская начинает работать с новыми стилями! <br>
+                      Скоро в каталоге появятся примеры ювелирных украшений в стиле Ар-Деко. Что же натолкнуло нас на идею создания этой коллекции? <br>
+                      Для стиля характерны строгая закономерность, смелые геометрические линии, этнические геометрические узоры, оформление в полутонах, отсутствие ярких цветов в оформлении, при этом — пёстрые орнаменты, роскошь, шик, дорогие современн...</p>
+                  </div>
+                  <a href="#">Читать полностью</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_content">
+
+          <ul class="footer_content_desk_left">
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Работа на заказ</a>
+            </li>
+            <li>
+              <a href="#">Обо мне</a>
+            </li>
+            <li>
+              <a href="#">Оплата и доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантии</a>
+            </li>
+            <li>
+              <a href="#">Оферта</a>
+            </li>
+          </ul>
+
+          <a class="footer_content_logo" href="#">
+            <img class="light" src="img/general/logo_light.svg" alt="">
+            <img class="dark" src="img/general/logo_dark.svg" alt="">
+          </a>
+
+          <div class="footer_content_social">
+            <a href="#">
+              <img class="light" src="img/general/vk_light.svg" alt="">
+              <img class="dark" src="img/general/vk_dark.svg" alt="">
+            </a>
+    
+            <a href="#">
+              <img class="light" src="img/general/fb_light.svg" alt="">
+              <img class="dark" src="img/general/fb_dark.svg" alt="">
+            </a>
+    
+            <a href="#">
+              <img class="light" src="img/general/insta_light.svg" alt="">
+              <img class="dark" src="img/general/insta_dark.svg" alt="">
+            </a>
+    
+            <a href="#">
+              <img class="light" src="img/general/youtube_light.svg" alt="">
+              <img class="dark" src="img/general/youtube_dark.svg" alt="">
+            </a>
+          </div>
+
+          <div class="footer_content_connection">
+            <a href="tel:+7 (999) 666-53-00">+7 (999) 666-53-00</a>
+            <a href="mailto:divos@yandex.ru">divos@yandex.ru</a>
+          </div>
+
+          <ul class="footer_content_desk_right">
+            <li>
+              <a href="#">Правовая информация</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Персональные данные</a>
+            </li>
+            <li>
+              <a href="#">Блог</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer_under">
+      <div class="container">
+        <div class="footer_under_content">
+          <span>2021 ©Все права защищены</span>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="back_modal"></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
