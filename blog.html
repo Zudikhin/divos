@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Divos</title>
+    <meta name="author" content="Yuriy Zudikhin" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header_content">
+
+          <a class="header_content_logo" href="/">
+            <img class="light" src="img/general/logo_light.svg" alt="">
+            <img class="dark" src="img/general/logo_dark.svg" alt="">
+          </a>
+
+          <ul class="header_content_menu">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Работа на заказ</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Обо мне</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+
+          <div class="header_content_switch">
+            <p>Дневной режим</p>
+            <div id="switch_theme" class="header_content_switch_icon">
+              <img class="light" src="img/general/switch_icon_light.svg" alt="">
+              <img class="dark" src="img/general/switch_icon_dark.svg" alt="">
+            </div>
+          </div>
+
+          <div class="header_content_list">
+
+            <a class="header_content_list_account fill" href="#">
+              <img class="light" src="img/general/account_light.svg" alt="">
+              <img class="dark" src="img/general/account_dark.svg" alt="">
+            </a>
+
+            <a class="header_content_list_favorite fill" href="#">
+              <img class="light" src="img/general/favorite_light.svg" alt="">
+              <img class="dark" src="img/general/favorite_dark.svg" alt="">
+            </a>
+
+            <a class="header_content_list_cart fill" href="#">
+              <img class="light" src="img/general/cart_light.svg" alt="">
+              <img class="dark" src="img/general/cart_dark.svg" alt="">
+            </a>
+
+          </div>
+
+          <div class="header_content_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <div class="header_dropdown">
+      
+      <ul class="header_dropdown_menu">
+        <li class="active"><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Работа на заказ</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Обо мне</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+
+      <div class="header_dropdown_switcher">
+        <p class="light">Ночной режим</p>
+        <p class="dark">Дневной режим</p>
+        <div class="header_dropdown_switcher_icon">
+          <img class="light" src="img/general/switch_icon_light.svg" alt="">
+          <img class="dark" src="img/general/switch_icon_dark.svg" alt="">
+        </div>
+      </div>
+
+      <div class="header_dropdown_social">
+
+        <a href="#">
+          <img class="light" src="img/general/vk_light.svg" alt="">
+          <img class="dark" src="img/general/vk_dark.svg" alt="">
+        </a>
+
+        <a href="#">
+          <img class="light" src="img/general/fb_light.svg" alt="">
+          <img class="dark" src="img/general/fb_dark.svg" alt="">
+        </a>
+
+        <a href="#">
+          <img class="light" src="img/general/insta_light.svg" alt="">
+          <img class="dark" src="img/general/insta_dark.svg" alt="">
+        </a>
+
+        <a href="#">
+          <img class="light" src="img/general/youtube_light.svg" alt="">
+          <img class="dark" src="img/general/youtube_dark.svg" alt="">
+        </a>
+
+      </div>
+
+      <div class="header_dropdown_connection">
+        <a href="tel:+7 (999) 666-53-00">+7 (999) 666-53-00</a>
+        <a href="mailto:divos@yandex.ru">divos@yandex.ru</a>
+      </div>
+
+    </div>
+
+    <main class="main">
+
+      <div class="search">
+        <div class="container">
+          <div class="search_content">
+            <button class="search_content_back" onclick="history.back();">
+              <img class="light" src="img/search/arrow_back_light.svg" alt="">
+              <img class="dark" src="img/search/arrow_back_dark.svg" alt="" />
+            </button>
+            <form action="">
+              <input dir="rtl" type="text" placeholder="Поиск">
+              <button type="submit">
+                <img class="light" src="img/search/search_icon_light.svg" alt="">
+                <img class="dark" src="img/search/search_icon_dark.svg" alt="">
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <section class="blog">
+        <div class="container">
+          <div class="blog_content">
+
+            <div class="blog_content_title">
+
+              <div class="blog_content_title_name">
+                <h5>Блог</h5>
+                <span>12 статей</span>
+              </div>
+
+              <div class="blog_content_title_view">
+
+                <div class="blog_content_title_view_big">
+                  <img class="light" src="img/blog/big_view_black_active.svg" alt="">
+                  <img class="default" src="img/blog/big_view_default.svg" alt="">
+                  <img class="dark" src="img/blog/big_view_white_active.svg" alt="">
+                </div>
+
+                <div class="blog_content_title_view_tiles">
+                  <img class="light" src="img/blog/tiles_view_black_active.svg" alt="">
+                  <img class="default" src="img/blog/tiles_view_default.svg" alt="">
+                  <img class="dark" src="img/blog/tiles_view_white_active.svg" alt="">
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="blog_content_list">
+
+              <div class="blog_content_list_item">
+
+                <div class="blog_content_list_item_img">
+
+                  <a href="#">
+                    <img src="img/blog/1.jpg" alt="">
+                  </a>
+
+                  <div class="blog_content_list_item_img_tags">
+                    <a style="color: #000; background-color: #FFFFFF" href="#">Статья</a>
+                    <a style="color: #FFFFFF; background-color: #DE4343" href="#">Камни</a>
+                  </div>
+
+                  <div class="blog_content_list_item_img_date">
+                    <a href="#">
+                      <span>30.04.21</span>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="blog_content_list_item_text">
+                  <a href="#">
+                    <h3>Закалка колец из серебра</h3>
+                    <p>Прочность и надёжность. Как они получаются такими крепкими?</p>
+                  </a>
+                </div>
+                
+              </div>
+
+              <div class="blog_content_list_item">
+
+                <div class="blog_content_list_item_img">
+
+                  <a href="#">
+                    <img src="img/blog/2.jpg" alt="">
+                  </a>
+
+                  <div class="blog_content_list_item_img_tags">
+                    <a style="color: #fff; background-color: #174E56" href="#">Заметка</a>
+                    <a style="color: #FFFFFF; background-color: #DE4343" href="#">Камни</a>
+                  </div>
+
+                  <div class="blog_content_list_item_img_date">
+                    <a href="#">
+                      <span>27.04.21</span>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="blog_content_list_item_text">
+                  <a href="#">
+                    <h3>Бриллиант или фианит?</h3>
+                    <p>Дешевле — не значит хуже, или всё же качество должно стоить денег?</p>
+                  </a>
+                </div>
+                
+              </div>
+
+              <div class="blog_content_list_item">
+
+                <div class="blog_content_list_item_img">
+
+                  <a href="#">
+                    <img src="img/blog/3.jpg" alt="">
+                  </a>
+
+                  <div class="blog_content_list_item_img_tags">
+                    <a style="color: #0A0A0A; background-color: #fff" href="#">Статья</a>
+                    <a style="color: #FFFFFF; background-color: #DE4343" href="#">Камни</a>
+                  </div>
+
+                  <div class="blog_content_list_item_img_date">
+                    <a href="#">
+                      <span>23.04.21</span>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="blog_content_list_item_text">
+                  <a href="#">
+                    <h3>Лазурит</h3>
+                    <p>Удивительные свойства камня</p>
+                  </a>
+                </div>
+                
+              </div>
+
+              <div class="blog_content_list_item">
+
+                <div class="blog_content_list_item_img">
+
+                  <a href="#">
+                    <img src="img/blog/4.jpg" alt="">
+                  </a>
+
+                  <div class="blog_content_list_item_img_tags">
+                    <a style="color: #0A0A0A; background-color: #fff" href="#">Статья</a>
+                    <a style="color: #FFFFFF; background-color: #DE4343" href="#">Камни</a>
+                  </div>
+
+                  <div class="blog_content_list_item_img_date">
+                    <a href="#">
+                      <span>15.04.21</span>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="blog_content_list_item_text">
+                  <a href="#">
+                    <h3>Сапфиры</h3>
+                    <p>Почему эти минералы такие дорогие?</p>
+                  </a>
+                </div>
+                
+              </div>
+
+              <div class="blog_content_list_item">
+
+                <div class="blog_content_list_item_img">
+
+                  <a href="#">
+                    <img src="img/blog/5.jpg" alt="">
+                  </a>
+
+                  <div class="blog_content_list_item_img_tags">
+                    <a style="color: #fff; background-color: #174E56" href="#">Заметка</a>
+                    <a style="color: #FFFFFF; background-color: #438ADE" href="#">Украшения</a>
+                  </div>
+
+                  <div class="blog_content_list_item_img_date">
+                    <a href="#">
+                      <span>13.04.21</span>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="blog_content_list_item_text">
+                  <a href="#">
+                    <h3>Броши и заколки</h3>
+                    <p>Лучшие модели весны 2021</p>
+                  </a>
+                </div>
+                
+              </div>
+
+              <div class="blog_content_list_item">
+
+                <div class="blog_content_list_item_img">
+
+                  <a href="#">
+                    <img src="img/blog/6.jpg" alt="">
+                  </a>
+
+                  <div class="blog_content_list_item_img_tags">
+                    <a style="color: #fff; background-color: #174E56" href="#">Заметка</a>
+                    <a style="color: #FFFFFF; background-color: #DE4343" href="#">Камни</a>
+                  </div>
+
+                  <div class="blog_content_list_item_img_date">
+                    <a href="#">
+                      <span>11.04.21</span>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="blog_content_list_item_text">
+                  <a href="#">
+                    <h3>Что такое кристаллы?</h3>
+                    <p>Красота и холод</p>
+                  </a>
+                </div>
+                
+              </div>
+
+              <div class="blog_content_list_item">
+
+                <div class="blog_content_list_item_img">
+
+                  <a href="#">
+                    <img src="img/blog/7.jpg" alt="">
+                  </a>
+
+                  <div class="blog_content_list_item_img_tags">
+                    <a style="color: #0A0A0A; background-color: #fff" href="#">Статья</a>
+                    <a style="color: #FFFFFF; background-color: #DE4343" href="#">Камни</a>
+                  </div>
+
+                  <div class="blog_content_list_item_img_date">
+                    <a href="#">
+                      <span>10.04.21</span>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="blog_content_list_item_text">
+                  <a href="#">
+                    <h3>Горный хрусталь</h3>
+                    <p>Самый загадочный минерал</p>
+                  </a>
+                </div>
+                
+              </div>
+
+              <div class="blog_content_list_item">
+
+                <div class="blog_content_list_item_img">
+
+                  <a href="#">
+                    <img src="img/blog/9.jpg" alt="">
+                  </a>
+
+                  <div class="blog_content_list_item_img_tags">
+                    <a style="color: #0A0A0A; background-color: #fff" href="#">Статья</a>
+                    <a style="color: #FFFFFF; background-color: #DE4343" href="#">Камни</a>
+                  </div>
+
+                  <div class="blog_content_list_item_img_date">
+                    <a href="#">
+                      <span>01.04.21</span>
+                    </a>
+                  </div>
+
+                </div>
+
+                <div class="blog_content_list_item_text">
+                  <a href="#">
+                    <h3>Алмаз</h3>
+                    <p>Распространённые мифы и правдивые факты о самых известных драгоценных камнях в истории</p>
+                  </a>
+                </div>
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_content">
+
+          <ul class="footer_content_desk_left">
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Работа на заказ</a>
+            </li>
+            <li>
+              <a href="#">Обо мне</a>
+            </li>
+            <li>
+              <a href="#">Оплата и доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантии</a>
+            </li>
+            <li>
+              <a href="#">Оферта</a>
+            </li>
+          </ul>
+
+          <a class="footer_content_logo" href="#">
+            <img class="light" src="img/general/logo_light.svg" alt="">
+            <img class="dark" src="img/general/logo_dark.svg" alt="">
+          </a>
+
+          <div class="footer_content_social">
+            <a href="#">
+              <img class="light" src="img/general/vk_light.svg" alt="">
+              <img class="dark" src="img/general/vk_dark.svg" alt="">
+            </a>
+    
+            <a href="#">
+              <img class="light" src="img/general/fb_light.svg" alt="">
+              <img class="dark" src="img/general/fb_dark.svg" alt="">
+            </a>
+    
+            <a href="#">
+              <img class="light" src="img/general/insta_light.svg" alt="">
+              <img class="dark" src="img/general/insta_dark.svg" alt="">
+            </a>
+    
+            <a href="#">
+              <img class="light" src="img/general/youtube_light.svg" alt="">
+              <img class="dark" src="img/general/youtube_dark.svg" alt="">
+            </a>
+          </div>
+
+          <div class="footer_content_connection">
+            <a href="tel:+7 (999) 666-53-00">+7 (999) 666-53-00</a>
+            <a href="mailto:divos@yandex.ru">divos@yandex.ru</a>
+          </div>
+
+          <ul class="footer_content_desk_right">
+            <li>
+              <a href="#">Правовая информация</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Персональные данные</a>
+            </li>
+            <li>
+              <a href="#">Блог</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer_under">
+      <div class="container">
+        <div class="footer_under_content">
+          <span>2021 ©Все права защищены</span>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="back_modal"></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

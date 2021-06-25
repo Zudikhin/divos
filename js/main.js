@@ -25,6 +25,51 @@ $(document).ready(function () {
         $(this).find(".example_content_list_item_img").css("height", width + "px");
     });
 
+    $(".blog_content_title_view_tiles").click(function() {
+        $(".blog_content").removeClass("tiles");
+    });
+
+    $(".blog_content_title_view_big").click(function() {
+        $(".blog_content").addClass("tiles");
+
+        if($(".blog_content").hasClass("tiles")) {
+            var lengthBlock = $(".blog_content_list_item").length;
+            if(lengthBlock == 8) {
+                $(".blog_content_list_item:eq(0)").addClass("big_wide");
+                $(".blog_content_list_item:eq(2)").addClass("long");
+                $(".blog_content_list_item:eq(3)").addClass("long");
+                $(".blog_content_list_item:eq(7)").addClass("long");
+                $(".blog_content_list_item:eq(7)").addClass("last_item");
+            } else if(lengthBlock == 7) {
+                $(".blog_content_list_item:eq(0)").addClass("big_wide");
+                $(".blog_content_list_item:eq(2)").addClass("long");
+                $(".blog_content_list_item:eq(3)").addClass("long");
+                $(".blog_content_list_item:eq(5)").addClass("big_wide");
+                $(".blog_content_list_item:eq(6)").addClass("long");
+                $(".blog_content_list_item:eq(6)").addClass("last_item");
+            } else if(lengthBlock == 6) {
+                $(".blog_content_list_item:eq(0)").addClass("big_wide");
+                $(".blog_content_list_item:eq(4)").addClass("long");
+                $(".blog_content_list_item:eq(5)").addClass("big_wide");
+                $(".blog_content_list_item:eq(5)").addClass("last_item");
+            } else if(lengthBlock == 5) {
+                $(".blog_content_list_item:eq(0)").addClass("big_wide");
+            } else if(lengthBlock == 4) {
+                $(".blog_content_list_item:eq(0)").addClass("big_wide");
+                $(".blog_content_list_item:eq(3)").addClass("big_wide");
+            } else if(lengthBlock == 3) {
+                $(".blog_content_list_item:eq(0)").addClass("big_wide");
+                $(".blog_content_list_item:eq(1)").addClass("long");
+                $(".blog_content_list_item:eq(2)").addClass("big_wide");
+                $(".blog_content_list_item:eq(2)").addClass("last_item");
+            } else if(lengthBlock == 2) {
+                $(".blog_content_list_item:eq(0)").addClass("big_wide");
+            } else if(lengthBlock == 1) {
+                $(".blog_content_list_item:eq(0)").addClass("big_wide");
+            }
+        }
+    });
+
     $('.home_slider_content').slick({
         infinite: true,
         slidesToShow: 1,
@@ -56,6 +101,7 @@ $(document).ready(function () {
           ]
     });
 
+    // console.log($(".blog_content_list_item").length);
 
     if($(window).width() <= 767) {
         $(".activity_content_anchors button").click(function() {
