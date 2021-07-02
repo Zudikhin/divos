@@ -105,6 +105,10 @@ textarea {
   resize: none;
 }
 
+select {
+  outline: none;
+}
+
 button {
   background-color: transparent;
   border: none;
@@ -4646,7 +4650,7 @@ body.dark_theme .product_content_main_text_info ul li:nth-child(2n+1) {
 
 .checkout_block_main_foundation_remember label .checkmark {
   position: absolute;
-  top: 19px;
+  top: 4px;
   left: 0;
   height: 30px;
   width: 30px;
@@ -5180,6 +5184,133 @@ body.dark_theme .product_content_main_text_info ul li:nth-child(2n+1) {
     font-size: 24px;
     line-height: 29px;
   }
+}
+
+.account {
+  margin-top: 25px;
+}
+
+.account_main_welcome h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--secondary-color);
+}
+
+.account_main_welcome p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--secondary-color);
+  margin-top: 20px;
+}
+
+.account_main_welcome p span {
+  color: #54ADFF;
+}
+
+.account_main_block_data {
+  margin-top: 30px;
+}
+
+.account_main_block_data h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--secondary-color);
+}
+
+.account_main_block_data_name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--secondary-color);
+  margin-top: 20px;
+}
+
+.account_main_block_data_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+}
+
+.account_main_block_data_item_name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9F9F9F;
+}
+
+.account_main_block_data_item_value {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--secondary-color);
+}
+
+.account_main_block_data_address {
+  margin-top: 15px;
+}
+
+.account_main_block_data_address span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9F9F9F;
+}
+
+.account_main_block_data_address p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--secondary-color);
+  margin-top: 20px;
+}
+
+.account_main_block_data_btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.account_main_block_data_btns button {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #54ADFF;
+}
+
+.account_main_block_order {
+  margin-top: 30px;
+}
+
+.account_main_block_order h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--secondary-color);
+}
+
+.account_main_block_order_list_item_img {
+  display: none;
 }
 
 .footer {
