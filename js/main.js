@@ -137,6 +137,20 @@ $(document).ready(function () {
         }
     });
 
+    $(".account_main_notifications_show").click(function() {
+        $(".account_main_notifications_list").addClass("active");
+        $(this).css("display", "none");
+    });
+
+    $(".account_main_block_order_show").click(function() {
+        $(".account_main_block_order_list").addClass("active");
+        $(this).css("display", "none");
+    });
+
+    $(".account_main_notifications_title_btn").click(function() {
+        $(".account_main_notifications_list_item_date").removeClass("account_main_notifications_list_item_date-unread");
+    });
+
     if($(window).width() <= 767) {
         $(".activity_content_anchors button").click(function() {
             var attr = $(this).attr("data-id");

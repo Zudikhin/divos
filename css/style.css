@@ -5309,8 +5309,619 @@ body.dark_theme .product_content_main_text_info ul li:nth-child(2n+1) {
   color: var(--secondary-color);
 }
 
+.account_main_block_order_list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-top: 33px;
+  display: none;
+}
+
+.account_main_block_order_list_item:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account_main_block_order_list_item:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account_main_block_order_list_item:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .account_main_block_order_list_item_img {
   display: none;
+}
+
+.account_main_block_order_list_item_text_order {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--secondary-color);
+}
+
+.account_main_block_order_list_item_text_order span {
+  color: #54ADFF;
+}
+
+.account_main_block_order_list_item_text_name {
+  display: none;
+}
+
+.account_main_block_order_list_item_text_mob_payment {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9F9F9F;
+  margin-top: 10px;
+}
+
+.account_main_block_order_list_item_text_method {
+  display: none;
+}
+
+.account_main_block_order_list_item_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.account_main_block_order_list_item_info_price {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--secondary-color);
+}
+
+.account_main_block_order_list_item_info_payment {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9F9F9F;
+  display: none;
+}
+
+.account_main_block_order_list_item_info_status {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.account_main_block_order_list_item_info_status:before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 2px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.account_main_block_order_list_item_info_status-way {
+  color: var(--secondary-color);
+}
+
+.account_main_block_order_list_item_info_status-way::before {
+  background-color: #54ADFF;
+}
+
+.account_main_block_order_list_item_info_status-get {
+  color: #9F9F9F;
+}
+
+.account_main_block_order_list_item_info_status-get::before {
+  border: 1px solid #54ADFF;
+}
+
+.account_main_block_order_list_item_info_status-canceled {
+  color: #9F9F9F;
+}
+
+.account_main_block_order_list_item_info_status-canceled::before {
+  border: 1px solid #E34747;
+}
+
+.account_main_block_order_show {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #54ADFF;
+  display: block;
+  margin-top: 30px;
+  margin-left: auto;
+}
+
+.account_main_notifications {
+  margin-top: 30px;
+}
+
+.account_main_notifications_title_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account_main_notifications_title_text h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--secondary-color);
+}
+
+.account_main_notifications_title_text span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+}
+
+.account_main_notifications_title_btn {
+  display: none;
+}
+
+.account_main_notifications_list {
+  margin-top: 20px;
+}
+
+.account_main_notifications_list_item {
+  margin-bottom: 40px;
+  position: relative;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account_main_notifications_list_item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #9F9F9F;
+  left: 0px;
+  top: -20px;
+}
+
+.account_main_notifications_list_item_mob_date {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9F9F9F;
+  position: relative;
+}
+
+.account_main_notifications_list_item_mob_date-unread {
+  padding-left: 20px;
+}
+
+.account_main_notifications_list_item_mob_date-unread:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 2px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #54ADFF;
+}
+
+.account_main_notifications_list_item_text h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--secondary-color);
+  margin-top: 10px;
+}
+
+.account_main_notifications_list_item_text p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: var(--secondary-color);
+  margin-top: 10px;
+}
+
+.account_main_notifications_list_item_text p a {
+  color: #54ADFF;
+}
+
+.account_main_notifications_list_item_date {
+  display: none;
+}
+
+.account_main_notifications_list_item:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account_main_notifications_list_item:first-child:after {
+  display: none;
+}
+
+.account_main_notifications_list_item:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account_main_notifications_list_item:nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account_main_notifications_show {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #54ADFF;
+  display: block;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .account {
+    margin-top: 30px;
+  }
+  .account_main_welcome h2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .account_main_welcome p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
+  .account_main_block_data {
+    margin-top: 50px;
+  }
+  .account_main_block_data h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .account_main_block_data_name {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 26px;
+  }
+  .account_main_block_data_item {
+    margin-top: 20px;
+  }
+  .account_main_block_data_item_name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .account_main_block_data_item_value {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .account_main_block_data_address {
+    margin-top: 30px;
+  }
+  .account_main_block_data_address span {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .account_main_block_data_address p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .account_main_block_data_btns button {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .account_main_block_order {
+    margin-top: 50px;
+  }
+  .account_main_block_order h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .account_main_block_order_list_item {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .account_main_block_order_list_item_img {
+    display: block;
+    min-width: 162px;
+    max-width: 162px;
+  }
+  .account_main_block_order_list_item_img img {
+    width: 162px;
+    height: 162px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .account_main_block_order_list_item_text {
+    margin-left: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .account_main_block_order_list_item_text_order {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .account_main_block_order_list_item_text_name {
+    display: block;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--secondary-color);
+  }
+  .account_main_block_order_list_item_text_mob_payment {
+    display: none;
+  }
+  .account_main_block_order_list_item_text_method {
+    display: block;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #9F9F9F;
+  }
+  .account_main_block_order_list_item_info {
+    min-width: 160px;
+  }
+  .account_main_block_order_list_item_info_price {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .account_main_block_order_list_item_info_payment {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+  }
+  .account_main_block_order_list_item_info_status {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+  }
+  .account_main_block_order_list_item_info_status:before {
+    left: -22px;
+    top: 4px;
+  }
+  .account_main_block_order_show {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 0px;
+    margin-top: 50px;
+  }
+  .account_main_notifications {
+    margin-top: 50px;
+  }
+  .account_main_notifications_title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .account_main_notifications_title_text {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .account_main_notifications_title_text h3 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .account_main_notifications_title_text span {
+    margin-left: 63px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .account_main_notifications_title_btn {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #54ADFF;
+  }
+  .account_main_notifications_list {
+    margin-top: 50px;
+  }
+  .account_main_notifications_list_item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    margin-bottom: 60px;
+  }
+  .account_main_notifications_list_item:after {
+    top: auto;
+    bottom: -30px;
+  }
+  .account_main_notifications_list_item:first-child:after {
+    display: block;
+  }
+  .account_main_notifications_list_item_mob_date {
+    display: none;
+  }
+  .account_main_notifications_list_item_text {
+    width: 68%;
+  }
+  .account_main_notifications_list_item_text h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .account_main_notifications_list_item_text p {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 25px;
+  }
+  .account_main_notifications_list_item_date {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--secondary-color);
+    position: relative;
+  }
+  .account_main_notifications_list_item_date-unread {
+    padding-right: 20px;
+  }
+  .account_main_notifications_list_item_date-unread:before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 9px;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    background-color: #54ADFF;
+  }
+  .account_main_notifications_show {
+    font-size: 18px;
+    line-height: 22px;
+    margin-left: 0px;
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .account_main_welcome h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .account_main_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .account_main_block_data {
+    width: 412px;
+  }
+  .account_main_block_data_btns {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 0px;
+  }
+  .account_main_block_data_btns button {
+    margin-top: 30px;
+  }
+  .account_main_block_order_show {
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .account_main_notifications {
+    margin-top: 86px;
+  }
+  .account_main_notifications_list_item_text h4 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .account_main_notifications_list_item_text p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+  }
+  .account_main_notifications_show {
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .account_main_block_order {
+    width: 58%;
+  }
+  .account_main_block_order_list_item {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .account_main_block_order_list_item_text {
+    width: 440px;
+    margin-left: 0px;
+  }
+}
+
+.account_main_notifications_list.active .account_main_notifications_list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account_main_block_order_list.active .account_main_block_order_list_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer {
