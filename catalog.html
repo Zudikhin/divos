@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Divos</title>
+    <meta name="author" content="Yuriy Zudikhin" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header_content">
+
+          <a class="header_content_logo" href="/">
+            <img class="light" src="img/general/logo_light.svg" alt="">
+            <img class="dark" src="img/general/logo_dark.svg" alt="">
+          </a>
+
+          <ul class="header_content_menu">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Работа на заказ</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Обо мне</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+
+          <div class="header_content_switch">
+            <p>Дневной режим</p>
+            <div id="switch_theme" class="header_content_switch_icon">
+              <img class="light" src="img/general/switch_icon_light.svg" alt="">
+              <img class="dark" src="img/general/switch_icon_dark.svg" alt="">
+            </div>
+          </div>
+
+          <div class="header_content_list">
+
+            <a class="header_content_list_account fill" href="#">
+              <img class="light" src="img/general/account_light.svg" alt="">
+              <img class="dark" src="img/general/account_dark.svg" alt="">
+            </a>
+
+            <a class="header_content_list_favorite fill" href="#">
+              <img class="light" src="img/general/favorite_light.svg" alt="">
+              <img class="dark" src="img/general/favorite_dark.svg" alt="">
+            </a>
+
+            <a class="header_content_list_cart fill" href="#">
+              <img class="light" src="img/general/cart_light.svg" alt="">
+              <img class="dark" src="img/general/cart_dark.svg" alt="">
+            </a>
+
+          </div>
+
+          <div class="header_content_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+        </div>
+      </div>
+    </header>
+
+    <div class="header_dropdown">
+      
+      <ul class="header_dropdown_menu">
+        <li class="active"><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Работа на заказ</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Обо мне</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+
+      <div class="header_dropdown_switcher">
+        <p class="light">Ночной режим</p>
+        <p class="dark">Дневной режим</p>
+        <div class="header_dropdown_switcher_icon">
+          <img class="light" src="img/general/switch_icon_light.svg" alt="">
+          <img class="dark" src="img/general/switch_icon_dark.svg" alt="">
+        </div>
+      </div>
+
+      <div class="header_dropdown_social">
+
+        <a href="#">
+          <img class="light" src="img/general/vk_light.svg" alt="">
+          <img class="dark" src="img/general/vk_dark.svg" alt="">
+        </a>
+
+        <a href="#">
+          <img class="light" src="img/general/fb_light.svg" alt="">
+          <img class="dark" src="img/general/fb_dark.svg" alt="">
+        </a>
+
+        <a href="#">
+          <img class="light" src="img/general/insta_light.svg" alt="">
+          <img class="dark" src="img/general/insta_dark.svg" alt="">
+        </a>
+
+        <a href="#">
+          <img class="light" src="img/general/youtube_light.svg" alt="">
+          <img class="dark" src="img/general/youtube_dark.svg" alt="">
+        </a>
+
+      </div>
+
+      <div class="header_dropdown_connection">
+        <a href="tel:+7 (999) 666-53-00">+7 (999) 666-53-00</a>
+        <a href="mailto:divos@yandex.ru">divos@yandex.ru</a>
+      </div>
+
+    </div>
+
+    <main class="main">
+
+      <div class="search">
+        <div class="container">
+          <div class="search_content">
+            <button class="search_content_back" onclick="history.back();">
+              <img class="light" src="img/search/arrow_back_light.svg" alt="">
+              <img class="dark" src="img/search/arrow_back_dark.svg" alt="" />
+            </button>
+            <form action="">
+              <input dir="rtl" type="text" placeholder="Поиск">
+              <button type="submit">
+                <img class="light" src="img/search/search_icon_light.svg" alt="">
+                <img class="dark" src="img/search/search_icon_dark.svg" alt="">
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <section class="catalog">
+        <div class="container">
+          <div class="catalog_main">
+            <div class="catalog_main_sidebar">
+              <h3>Каталог камней</h3>
+              Фильтр товаров
+            </div>
+            <div class="catalog_main_list">
+              <div class="catalog_main_list_head">
+                <div class="catalog_main_list_head_mob">
+                  <div class="catalog_main_list_head_mob_left">
+                    <h3>Каталог камней</h3>
+                    <div class="catalog_main_list_head_mob_left_filter">
+                      <img class="light" src="img/catalog/arrows_black.svg" alt="">
+                      <img class="dark" src="img/catalog/arrows_white.svg" alt="">
+                      <span>По возрастанию цены</span>
+                    </div>
+                  </div>
+                  <div class="catalog_main_list_head_mob_right">
+                    <span class="catalog_main_list_head_mob_right_name">324 изделия</span>
+                    <div class="catalog_main_list_head_mob_right_filter">
+                      <img class="light" src="img/catalog/filter_black.svg" alt="">
+                      <img class="dark" src="img/catalog/filter_white.svg" alt="">
+                      <img class="active" src="img/catalog/filter_active.svg" alt="">
+                      <span>Фильтры</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="catalog_main_list_head_desk">
+                  <span class="catalog_main_list_head_desk_quantity">324 изделия</span>
+                  <div class="catalog_main_list_head_desk_filter">
+                    <img class="light" src="img/catalog/arrows_black.svg" alt="">
+                    <img class="dark" src="img/catalog/arrows_white.svg" alt="">
+                    <span>По возрастанию цены</span>
+                  </div>
+                  <div class="catalog_main_list_head_desk_search">
+                    <form action="">
+                      <button type="submit">
+                        <img class="light" src="img/catalog/search_icon.svg" alt="">
+                        <img class="dark" src="img/catalog/search_icon_white.svg" alt="">
+                      </button>
+                      <input placeholder="Поиск" type="text">
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog_main_list_content">
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-10%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/1.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">1 200 р</span>
+                      <span class="catalog_main_list_content_item_price_old">1 300 р</span>
+                    </div>
+                    <h4>Солнечный камень, 5 карат</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-20%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/2.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">3 000 р</span>
+                      <span class="catalog_main_list_content_item_price_old">4 500 р</span>
+                    </div>
+                    <h4>Лабрадор, 2 карата</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-5%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/3.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">3 000 р</span>
+                      <span class="catalog_main_list_content_item_price_old">4 500 р</span>
+                    </div>
+                    <h4>Аметисты природные огранённые</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/4.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">10 000 р</span>
+                    </div>
+                    <h4>Синтетический сапфир, 10 карат</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-10%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/1.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">1 200 р</span>
+                      <span class="catalog_main_list_content_item_price_old">1 300 р</span>
+                    </div>
+                    <h4>Солнечный камень, 5 карат</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-20%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/2.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">3 000 р</span>
+                      <span class="catalog_main_list_content_item_price_old">4 500 р</span>
+                    </div>
+                    <h4>Лабрадор, 2 карата</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-5%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/3.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">3 000 р</span>
+                      <span class="catalog_main_list_content_item_price_old">4 500 р</span>
+                    </div>
+                    <h4>Аметисты природные огранённые</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/4.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">10 000 р</span>
+                    </div>
+                    <h4>Синтетический сапфир, 10 карат</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-10%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/1.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">1 200 р</span>
+                      <span class="catalog_main_list_content_item_price_old">1 300 р</span>
+                    </div>
+                    <h4>Солнечный камень, 5 карат</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-20%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/2.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">3 000 р</span>
+                      <span class="catalog_main_list_content_item_price_old">4 500 р</span>
+                    </div>
+                    <h4>Лабрадор, 2 карата</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-5%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/3.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">3 000 р</span>
+                      <span class="catalog_main_list_content_item_price_old">4 500 р</span>
+                    </div>
+                    <h4>Аметисты природные огранённые</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/4.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">10 000 р</span>
+                    </div>
+                    <h4>Синтетический сапфир, 10 карат</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-10%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/1.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">1 200 р</span>
+                      <span class="catalog_main_list_content_item_price_old">1 300 р</span>
+                    </div>
+                    <h4>Солнечный камень, 5 карат</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-20%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/2.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">3 000 р</span>
+                      <span class="catalog_main_list_content_item_price_old">4 500 р</span>
+                    </div>
+                    <h4>Лабрадор, 2 карата</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-5%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/3.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">3 000 р</span>
+                      <span class="catalog_main_list_content_item_price_old">4 500 р</span>
+                    </div>
+                    <h4>Аметисты природные огранённые</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/4.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">10 000 р</span>
+                    </div>
+                    <h4>Синтетический сапфир, 10 карат</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-10%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/1.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">1 200 р</span>
+                      <span class="catalog_main_list_content_item_price_old">1 300 р</span>
+                    </div>
+                    <h4>Солнечный камень, 5 карат</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-20%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/2.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">3 000 р</span>
+                      <span class="catalog_main_list_content_item_price_old">4 500 р</span>
+                    </div>
+                    <h4>Лабрадор, 2 карата</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <div class="catalog_main_list_content_item_img_discount">
+                        <img src="img/catalog/discount.png" alt="">
+                        <span>-5%</span>
+                      </div>
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/3.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">3 000 р</span>
+                      <span class="catalog_main_list_content_item_price_old">4 500 р</span>
+                    </div>
+                    <h4>Аметисты природные огранённые</h4>
+                  </a>
+                </div>
+
+                <div class="catalog_main_list_content_item">
+                  <a href="#">
+                    <div class="catalog_main_list_content_item_img">
+                      <img class="catalog_main_list_content_item_img_main" src="img/catalog/4.jpg" alt="">
+                    </div>
+                    <div class="catalog_main_list_content_item_price">
+                      <span class="catalog_main_list_content_item_price_new">10 000 р</span>
+                    </div>
+                    <h4>Синтетический сапфир, 10 карат</h4>
+                  </a>
+                </div>
+
+              </div>
+              <div class="catalog_main_list_saled">
+                <h3>Проданные топазы</h3>
+                <p>Эти камни уже нашли своих владельцев, но мы можем изготовить для Вас точно такие же!</p>
+                <div class="catalog_main_list_saled_blocks">
+                  <div class="catalog_main_list_saled_blocks_item">
+                    <a href="#">
+                      <div class="catalog_main_list_saled_blocks_item_img">
+                        <img src="img/catalog/sale1.png" alt="">
+                      </div>
+                      <h4>Пурпурный фианит, 10 карат</h4>
+                    </a>
+                  </div>
+
+                  <div class="catalog_main_list_saled_blocks_item">
+                    <a href="#">
+                      <div class="catalog_main_list_saled_blocks_item_img">
+                        <img src="img/catalog/sale2.png" alt="">
+                      </div>
+                      <h4>Цитрин природный медовый овал, 12 карат</h4>
+                    </a>
+                  </div>
+
+                  <div class="catalog_main_list_saled_blocks_item">
+                    <a href="#">
+                      <div class="catalog_main_list_saled_blocks_item_img">
+                        <img src="img/catalog/sale3.png" alt="">
+                      </div>
+                      <h4>Цитрин природный медовый овал, 12 карат</h4>
+                    </a>
+                  </div>
+
+                  <div class="catalog_main_list_saled_blocks_item">
+                    <a href="#">
+                      <div class="catalog_main_list_saled_blocks_item_img">
+                        <img src="img/catalog/sale4.png" alt="">
+                      </div>
+                      <h4>Султаниты огранённые, 10 карат</h4>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_content">
+
+          <ul class="footer_content_desk_left">
+            <li>
+              <a href="#">Каталог</a>
+            </li>
+            <li>
+              <a href="#">Работа на заказ</a>
+            </li>
+            <li>
+              <a href="#">Обо мне</a>
+            </li>
+            <li>
+              <a href="#">Оплата и доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантии</a>
+            </li>
+            <li>
+              <a href="#">Оферта</a>
+            </li>
+          </ul>
+
+          <a class="footer_content_logo" href="#">
+            <img class="light" src="img/general/logo_light.svg" alt="">
+            <img class="dark" src="img/general/logo_dark.svg" alt="">
+          </a>
+
+          <div class="footer_content_social">
+            <a href="#">
+              <img src="img/general/vk_light.svg" alt="">
+            </a>
+    
+            <a href="#">
+              <img src="img/general/fb_light.svg" alt="">
+            </a>
+    
+            <a href="#">
+              <img src="img/general/insta_light.svg" alt="">
+            </a>
+    
+            <a href="#">
+              <img src="img/general/youtube_light.svg" alt="">
+            </a>
+          </div>
+
+          <div class="footer_content_connection">
+            <a href="tel:+7 (999) 666-53-00">+7 (999) 666-53-00</a>
+            <a href="mailto:divos@yandex.ru">divos@yandex.ru</a>
+          </div>
+
+          <ul class="footer_content_desk_right">
+            <li>
+              <a href="#">Правовая информация</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+            <li>
+              <a href="#">Персональные данные</a>
+            </li>
+            <li>
+              <a href="#">Блог</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer_under">
+      <div class="container">
+        <div class="footer_under_content">
+          <span>2021 ©Все права защищены</span>
+          <a href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal_entrance">
+      <button class="modal_entrance_close">
+        <img src="img/modal_account/close.svg" alt="">
+      </button>
+      <h3>Вход в личный кабинет</h3>
+      <form action="">
+        <input type="email" placeholder="Почта">
+        <div class="modal_entrance_password">
+          <input type="password" placeholder="Пароль">
+          <div class="modal_entrance_password_show">
+            <img src="img/modal_account/show_pass.svg" alt="">
+          </div>
+        </div>
+        
+        <div class="modal_entrance_forget">
+          <div class="modal_entrance_forget_remember">
+            <label>Запомнить меня
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+          <a href="#">Забыли пароль?</a>
+        </div>
+        <input type="submit" value="Войти">
+      </form>
+      <button class="modal_entrance_registration">Регистрация</button>
+    </div>
+
+    <div class="modal_registration">
+      <button class="modal_registration_close">
+        <img src="img/modal_account/close.svg" alt="">
+      </button>
+      <h3>Регистрация</h3>
+      <form action="">
+        <input type="text" placeholder="Имя*" id="name_reg">
+        <input type="tel" placeholder="Телефон*">
+        <input type="email" placeholder="E-mail">
+        <div class="modal_registration_password">
+          <input type="password" placeholder="Пароль">
+          <div class="modal_registration_password_show">
+            <img src="img/modal_account/show_pass.svg" alt="">
+          </div>
+        </div>
+        <input type="submit" value="Зарегистрироваться">
+      </form>
+    </div>
+
+    <div class="back_account"></div>
+
+    <div class="back_modal"></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

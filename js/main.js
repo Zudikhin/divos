@@ -1,7 +1,6 @@
 $(document).ready(function () {
     "use strict";
-
-
+    
     $(".header_dropdown_switcher").click(function() {
         $("body").toggleClass("dark_theme");
     });
@@ -13,6 +12,9 @@ $(document).ready(function () {
     $(".header_content_btn").click(function() {
         $(".header_dropdown").toggleClass("active");
         $(".back_modal").toggleClass("active");
+        $(".modal_entrance").removeClass("active");
+        $(".back_account").removeClass("active");
+        $(".modal_registration").removeClass("active");
     });
 
     $(".back_modal").click(function() {
@@ -172,7 +174,64 @@ $(document).ready(function () {
                 scrollTop: $("#" + attr).offset().top
             }, 1500);
         });
-     }
+    }
+
+    $(".catalog_main_list_content_item_img_main").each(function() {
+        var width = $(this).width();
+        // var height = width + ' px';
+        $(this).css('height', width + "px");
+    });
+
+    $(".catalog_main_list_saled_blocks_item_img img").each(function() {
+        var width = $(this).width();
+        $(this).css('height', width + "px");
+    });
+
+
+    $(".modal_entrance_password_show").click(function() {
+        if('password' == $(".modal_entrance_password input").attr('type')) {
+            $(".modal_entrance_password input").prop("type", "text");
+        } else {
+            $(".modal_entrance_password input").prop("type", "password");
+        }
+    });
+
+    $(".header_content_list_account").click(function(e) {
+        e.preventDefault();
+        $(".modal_entrance").addClass("active");
+        $(".back_account").addClass("active");
+    })
+
+    $(".back_account").click(function() {
+        $(this).removeClass("active");
+        $(".modal_entrance").removeClass("active");
+        $(".modal_registration").removeClass("active");
+    });
+
+    $(".modal_entrance_close").click(function() {
+        $(".modal_entrance").removeClass("active");
+        $(".back_account").removeClass("active");
+    });
+
+    $(".modal_entrance_registration").click(function() {
+        $(".modal_entrance").removeClass("active");
+        $(".modal_registration").addClass("active");
+    });
+
+
+    $(".modal_registration_close").click(function() {
+        $(".modal_registration").removeClass("active");
+        $(".back_account").removeClass("active");
+    });
+
+    $(".modal_registration_password_show").click(function() {
+        if('password' == $(".modal_registration_password input").attr('type')) {
+            $(".modal_registration_password input").prop("type", "text");
+        } else {
+            $(".modal_registration_password input").prop("type", "password");
+        }
+    });
+
 
 
 });
