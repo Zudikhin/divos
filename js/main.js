@@ -5,7 +5,7 @@ $(document).ready(function () {
         $("body").toggleClass("dark_theme");
     });
 
-    $(".header_content_switch").click(function() {
+    $(".header_content_switch_new").click(function() {
         $("body").toggleClass("dark_theme");
     });
 
@@ -233,5 +233,26 @@ $(document).ready(function () {
     });
 
 
+
+    $('.about_content_sertificate_list').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: false,
+        fade: false,
+        arrows: true,
+        prevArrow: $('.about_content_sertificate_btns_prev'),
+        nextArrow: $('.about_content_sertificate_btns_next'),
+        responsive: [
+            {
+                breakpoint: 1199,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  fade: true
+                }
+              }
+          ]
+    });
 
 });
